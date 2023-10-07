@@ -15,7 +15,7 @@ void dfs(int node,int parent,vector<int>&vis,vector<int>adj[],int low[],int tim[
                 brig.push_back({node,x});
             }
         }else{
-            low[node]=min(low[node],low[x]);
+            low[node]=min(low[node],tim[x]);
         }
     }
 }
